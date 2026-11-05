@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>6 MONTHS!</title>
+
+  <script type="text/javascript">
+  // <![CDATA[
+  var speed=100; // speed of wobbling, lower is faster
+  var height=3; // height of wobbling in pixels
+  var alink="";//https://www.youtube.com/watch?v=htP85AsPVZ4"; // page to link text to (set to ="" for no link)
+
+  /****************************
+  *    Wobbly Text Effect     *
+  *(c) 2003-6 mf2fm web-design*
+  *  http://www.mf2fm.com/rv  *
+  * DON'T EDIT BELOW THIS BOX *
+  ****************************/
+  var wobtxt, wobble, wobcnt=0;
+  window.onload=function() { if (document.getElementById) {
+  var i, wobli;
+  wobble=document.getElementById("wobble");
+  wobtxt=wobble.firstChild.nodeValue;
+  while (wobble.childNodes.length) wobble.removeChild(wobble.childNodes[0]);
+  for (i=0; i<wobtxt.length; i++) {
+    wobli=document.createElement("span");
+    wobli.setAttribute("id", "wobb"+i);
+    wobli.style.position="relative";
+    wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
+    if (alink) {
+      wobli.style.cursor="pointer";
+      wobli.onclick=function() { top.location.href=alink; }
+    }
+    wobble.appendChild(wobli);
+  }
+  setInterval("wobbler()", speed);
+  }}
+
+  function wobbler() {
+  for (var i=0; i<wobtxt.length; i++) document.getElementById("wobb"+i).style.top=Math.round(height*Math.sin(i+wobcnt))+"px"
+  wobcnt++;
+  }
+  // ]]>
+  </script>
+
+  <link rel="stylesheet" href="css/homepage.css" />
+
+</head>
+
+<body>
+  <script type="text/javascript">
+    function openFullscreen() {
+
+    const elem = document.documentElement;
+    
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+    }
+    
+  }
+  </script>
+
+  <div id="main-book" class="book" onclick="openFullscreen();">
+  <div class="pageL">
+    <!-- page content here -->		
+    <div class="wildflower">
+      <p>I can't believe that it has already been six moths! It feels like just yesterday Miles dragged me to that party. I am so grateful that I have someone like you in my life. I truly don't know what I would do without you :) You keep me sane </p>
+      <p>I always think about that first city date and all of the feelings associated with it. I remember being so nervous and begging Maeve to get any information she could out of you. I remember the uncertainty of the days before and trying to coordinate with you without seeming too desperate. I remember being so so hungry and trying to put on my best face around you. I will never forget the walk we had and missing train after train to just spend a little more time with you. I called just about every person that was important to me on the train ride home. I could not contain my excitement :)</p>
+      <p style="font-size: x-small;">PS. Try clicking on the cat sleeping above....</p>
+    </div>
+  </div>
+  <div class="seam"></div>
+  <div class="pageR">
+    <div class="wildflower"">
+      <p>I love you more than anything in this world. I simply can't wait to be with you again. There is nothing harder than hopping in the car and leaving you 9 hours away...</p>
+      <p>I have so much to say to you that it feels like I can write forever. It really does feel like you complete me. We think the same way and I love that. It seems like you get me and I hope that you feel the same way!</p>
+      <p>To be with someone so mature and understanding has rocked my world, to say the least. Thank you for showing me what real, HEALTHY, love is all about :) Bragging about you never gets old for me... I'm sure everyone I know is tired of it by now :p</p>
+      <p style="margin-bottom: 2px;">It is such a shame I dont get to see you in person for such an important day! I hope that my love for you transcends the distance between us currently. LOVE YOU ALWAYS AND FOREVER!!! NEVER FORGET IT!!!</p>
+      <a href="televisions/sony_standard_crt_tv.html" >CLICK ME</a>
+    </div>
+    <!-- page content here -->
+  </div>
+  </div>
+
+  
+  <div class="notepaper" style="position: absolute; top:10%; left: calc(45% - 5px);">
+    <div id="notepaper-content" style="display: grid; place-items: center; container-type: inline-size;">
+      <div id="wobble">HAPPY SIX MONTHS!!!!!</div>
+    </div>
+  </div> 
+
+  <script>
+    NekoType="lucy";
+    const myDiv = document.querySelector('.pageL');
+    const rect = myDiv.getBoundingClientRect();
+    window.startNekoX = rect.left;
+    window.startNekoY = rect.top-29;
+  </script>
+
+  <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a>Neko</a></h1>
+  
+  <div class="photopile" style="width: 50vw; position: absolute; right: 55%; top:5%;">
+  <button popovertarget="photo1">
+    <figure>
+      <img src="images/popover/DSCF1478.png" alt="">
+      <figcaption>4th Of July!</figcaption>
+    </figure>
+  </button>
+  <button popovertarget="photo2">
+    <figure>
+      <img src="images/popover/mirror.png" alt="">
+      <figcaption>paris pics</figcaption>
+    </figure>
+  </button>
+  <button popovertarget="photo3">
+    <figure>
+      <img src="images/popover/sillyone.png" alt="">
+      <figcaption>1st reunion</figcaption>
+    </figure>
+  </button>
+  <button popovertarget="photo4">
+    <figure>
+      <img src="images/popover/violation.png" alt="">
+      <figcaption>u being maternal</figcaption>
+    </figure>
+  </button>
+  <button popovertarget="photo5">
+    <figure>
+      <img src="images/popover/DERP.png" alt="">
+      <figcaption>DERP</figcaption>
+    </figure>
+  </button>
+  <button popovertarget="photo6">
+    <figure>
+      <img src="images/popover/awww.png" alt="">
+      <figcaption>Awww so cute</figcaption>
+    </figure>
+  </button>
+  </div>
+  <div class="popovers">
+    <figure popover id="photo1">
+      <img src="images/popover/DSCF1478.png" alt="">
+      <figcaption>wow look at us we are the prettiest people ever</figcaption>
+    </figure>
+    <figure popover id="photo2">
+      <img src="images/popover/mirror.png" alt="">
+      <figcaption>why did we take this lol</figcaption>
+    </figure>
+    <figure popover id="photo3">
+      <img src="images/popover/sillyone.png" alt="">
+      <figcaption>shouts out to ted for this wonderful pic</figcaption>
+    </figure>
+    <figure popover id="photo4">
+      <img src="images/popover/violation.png" alt="">
+      <figcaption>i was so comfy and u violated meee</figcaption>
+    </figure>
+    <figure popover id="photo5">
+      <img src="images/popover/DERP.png" alt="">
+      <figcaption>derp and derpina</figcaption>
+    </figure>
+    <figure popover id="photo6">
+      <img src="images/popover/awww.png" alt="">
+      <figcaption>Was this the first time you slept over at my dad's? i cant remember</figcaption>
+    </figure>
+  </div>
+
+
+</body>
+
+</html>
